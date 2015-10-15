@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_how_to_run_an_App"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.syenbhark.thetutorialforandroidbeginners.F03HowToRunAnAppActivity">
+
+        <TextView
+            style="@style/TextViewTemplate"
+            android:text="@string/F03HowToRunAnApp_textView_subtitle01"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F03HowToRunAnApp_textView_contents01" />
+
+        <TextView
+            style="@style/TextViewTemplate"
+            android:text="@string/F03HowToRunAnApp_textView_subtitle02"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F03HowToRunAnApp_textView_contents02" />
+
+        <Button
+            android:id="@+id/button_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/app_button_selector"
+            android:clickable="true"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:longClickable="true"
+            android:onClick="setOnClick"
+            android:text="@string/F03HowToRunAnApp_button_theApp"
+            android:textAllCaps="false"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/textView_what_the_diff_is"
+            style="@style/TextViewTemplate"
+            android:layout_marginTop="15dp"
+            android:text="@string/F03HowToRunAnApp_textView_subtitle03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_desc_of_what_the_diff"
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F03HowToRunAnApp_textView_contents03"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView_drop_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF59D"
+            android:padding="20dp"
+            android:text="@string/F03HowToRunAnApp_textView_dropBox"
+            android:textColor="#757575"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

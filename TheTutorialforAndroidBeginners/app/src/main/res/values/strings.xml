@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Tutorial for Android Beginners</string>
+    <string name="dear">For my grandma</string>
+    <string name="button01">1. How to unlock the screen?</string>
+    <string name="button02">2. How to answer the incoming call?</string>
+    <string name="button03">3. How to run an application?</string>
+    <string name="button04">4. How to manipulate the cursor?</string>
+    <string name="button05">5. How to scroll the screen?</string>
+
+    <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">Unlock the basic screen</string>
+    <string name="F01HowToUnlockTheScreenActivity_textView_contents">\tIf your screen is turned off, but the device\'s power is not off, press the hold key to turn it on. After that, press and drag the lock to the unlock. If there is nothing, just drag the screen to anywhere. \n\tHere is the simulation video that is one of the ways, when you cannot understand that. In the video, assume that the mouse pointer is one of your fingers. \n\tAnyway, how about trying it out? It works after activating device administrator.</string>
+    <string name="F01HowToUnlockTheScreenActivity_button_startVideo">See the simulation</string>
+    <string name="F01HowToUnlockTheScreenActivity_button_trySimulation">Try it out!</string>
+    <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">Not Registered as the admin!</string>
+    <string name="F01HowToUnlockTheScreenActivity_toast_complete">Complete the first lesson!</string>
+    <string name="description">Some Description About Your Admin</string>
+    <string name="uri_prefix">android.resource://com.syenbhark.thetutorialforandroidbeginners/</string>
+
+    <string name="F02HowToAnswerTheIncomingCallActivity_textView_subtitle">Gets the incoming call!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_textView_contents">\tThere are many ways to get the incoming call, but I hope you to do that intuitively. When you see the (green or blue) phone shape, try just clicking or dragging it to center. If the shape is white, drag it to green one. \n\tHere is the simulation video of the most common way to get the incoming call. Consider the mouse pointer as one of your fingers like before. \n\tThen, how about asking anyone to call your phone and try to take it? Expecting you to get it! If you did, please check the box!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_button_startVideo">See the simulation</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_checkBox">I\'m done!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_button_confirm">Back to the main</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_toast_complete">Complete the second lesson!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_toast_non_complete">Do it the next time!</string>
+
+    <string name="F03HowToRunAnApp_textView_subtitle01">What is the Application?</string>
+    <string name="F03HowToRunAnApp_textView_contents01">\tAn application (or App for short) is a program designed to perform activities for the benefit of the user.</string>
+    <string name="F03HowToRunAnApp_textView_subtitle02">How to run it?</string>
+    <string name="F03HowToRunAnApp_textView_contents02">\tThe below image is an app icon. To start it, please try to hit it and do not press it for long time.</string>
+    <string name="F03HowToRunAnApp_button_theApp">I\'m the app!</string>
+    <string name="F03HowToRunAnApp_textView_subtitle03">Click VS. Long Click</string>
+    <string name="F03HowToRunAnApp_textView_contents03">\tGreat! Many novices used to do \'long click\' when trying to run the app, but you ought to just hit it like just before. Now, can you drag the app and drop it on here?</string>
+    <string name="F03HowToRunAnApp_textView_dropBox">Drop the app on here!</string>
+    <string name="F03HowToRunAnApp_toast_click_right01">Nailed it!</string>
+    <string name="F03HowToRunAnApp_toast_click_wrong01">No, click it for long time this time!</string>
+    <string name="F03HowToRunAnApp_toast_longClick_right01">Keep dragging and drop it on the yellow box!</string>
+    <string name="F03HowToRunAnApp_toast_longClick_wrong01">Too long. Just hit it!</string>
+    <string name="F03HowToRunAnApp_toast_longClick_wrong02">Oh, you missed! Try it again.</string>
+    <string name="F03HowToRunAnApp_toast_complete">Complete the third lesson!</string>
+
+    <string name="F04HowToManipulateTheCursor_textView_subtitle01">What is the cursor?</string>
+    <string name="F04HowToManipulateTheCursor_editText_hint"> &lt;-This blinking bar is the cursor!</string>
+    <string name="F04HowToManipulateTheCursor_textView_contents01">\tWhen you see it, you can type in the text on the there. Now, tap on the cursor to pop up the keyboard and type in \'Android\'. After that, please press the done key!</string>
+    <string name="F04HowToManipulateTheCursor_string_answer01">Android</string>
+    <string name="F04HowToManipulateTheCursor_toast_right01">Cool!</string>
+    <string name="F04HowToManipulateTheCursor_toast_wrong01">Type in \'Android\'</string>
+    <string name="F04HowToManipulateTheCursor_textView_hint01">Hint: </string>
+    <string name="F04HowToManipulateTheCursor_textView_hint_contents01">It could be the done key.</string>
+    <string name="F04HowToManipulateTheCursor_textView_subtitle02">Try to manipulate the cursor pointer!</string>
+    <string name="F04HowToManipulateTheCursor_textView_contents02">\tPerfect! Let\'s prefix \'My\' to that word. Do not erase the word, just use the cursor pointer. To activate it, tap on it again. </string>
+    <string name="F04HowToManipulateTheCursor_textView_hint_contents02">It is named the cursor pointer.</string>
+    <string name="F04HowToManipulateTheCursor_string_answer02">MyAndroid</string>
+    <string name="F04HowToManipulateTheCursor_toast_right02">Great!</string>
+    <string name="F04HowToManipulateTheCursor_toast_wrong02">Prefix \'My\'</string>
+    <string name="F04HowToManipulateTheCursor_toast_alertDoNotUseDel">Do not use the Del key now</string>
+    <string name="F04HowToManipulateTheCursor_button_startVideo">See the simulation video</string>
+    <string name="F04HowToManipulateTheCursor_toast_complete">Complete the forth lesson!</string>
+
+    <string name="F05HowToScrollTheScreen_textView_subtitle01">Scrolling?</string>
+    <string name="F05HowToScrollTheScreen_textView_contents01">\tHave you ever scrolled before? You can scroll in the below yellow box. Can you see the bar on the top-right corner in there? It means you can scroll!</string>
+    <string name="F05HowToScrollTheScreen_textView_contents02">\tIf you drag up the box, you can scroll down it. To scroll up, drag down the box. Now, let\'s drag up the yellow box and submit the written sentence in there!</string>
+    <string name="F05HowToScrollTheScreen_answer">You are awesome!</string>
+    <string name="F05HowToScrollTheScreen_editText_hint">Tap on me and type in here and submit it!</string>
+    <string name="F05HowToScrollTheScreen_toast_wrong">Wrong, try it again!</string>
+    <string name="F05HowToScrollTheScreen_toast_complete">Complete the last lesson!</string>
+</resources>

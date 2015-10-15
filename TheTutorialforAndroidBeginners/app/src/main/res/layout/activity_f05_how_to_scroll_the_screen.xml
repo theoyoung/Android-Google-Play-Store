@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.syenbhark.thetutorialforandroidbeginners.F05HowToScrollTheScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_scrolling_subtitle"
+            style="@style/TextViewTemplate"
+            android:text="@string/F05HowToScrollTheScreen_textView_subtitle01"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_scrolling_contents01"
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F05HowToScrollTheScreen_textView_contents01" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF59D"
+            android:fadeScrollbars="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:paddingTop="100dp"
+                android:text="@string/F05HowToScrollTheScreen_answer" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView_scrolling_contents02"
+            style="@style/TextViewTemplate"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/F05HowToScrollTheScreen_textView_contents02" />
+
+        <EditText
+            android:id="@+id/editText_scrolling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:hint="@string/F05HowToScrollTheScreen_editText_hint"
+            android:singleLine="true" />
+    </LinearLayout>
+</ScrollView>

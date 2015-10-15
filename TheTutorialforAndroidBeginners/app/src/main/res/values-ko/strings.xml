@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">안드로이드\n초보자 튜토리얼</string>
+    <string name="dear">사랑하는 할머니께</string>
+    <string name="button01">1. 홀드화면은 어떻게 열어요?</string>
+    <string name="button02">2. 전화는 어떻게 받아요?</string>
+    <string name="button03">3. 앱은 어떻게 실행시키나요?</string>
+    <string name="button04">4. 커서는 어떻게 조작하나요?</string>
+    <string name="button05">5. 화면은 어떻게 스크롤해요?</string>
+
+    <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">잠긴 화면 열기</string>
+    <string name="F01HowToUnlockTheScreenActivity_textView_contents">\t기계는 끄지 않았지만 화면이 꺼져있을 때가 화면이 잠긴거에요. 키려면 홀드키를 누르세요. 그 후, 자물쇠를 열린 자물쇠까지 끌어다 놓으세요. 아무 것도 없다면, 그냥 화면을 아무데나 끌어보세요! \n\t이해가 안 된다면 대표적으로 여는 방법 중 하나인 이 시뮬레이션 비디오를 보세요. 비디오에 있는 마우스 포인터를 당신의 손가락 중 하나로 생각하세요! \n\t그럼, 한 번 직접 해보는 건 어때요? 장치 관리자를 활성화 시킨 후에 하실 수 있어요.</string>
+    <string name="F01HowToUnlockTheScreenActivity_button_startVideo">시뮬레이션 보기</string>
+    <string name="F01HowToUnlockTheScreenActivity_button_trySimulation">직접 해보기</string>
+    <string name="F01HowToUnlockTheScreenActivity_toast_alertAdmin">관라지로 등록되지 않았습니다!</string>
+    <string name="F01HowToUnlockTheScreenActivity_toast_complete">첫 번째 수업을 성공적으로 마쳤어요!</string>
+
+    <string name="F02HowToAnswerTheIncomingCallActivity_textView_subtitle">전화를 받아봐요!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_textView_contents">\t기계마다 전화 받는 방법이 다양하지만, 보통 직관적으로 알 수 있어요. 초록이나 파랑색 전화기 모양을 보면, 한 번 눌러보거나 중간으로 끌어보세요. 하얀 색이라면, 초록색 전화기모양으로 끌어놓으세요. \n\t여기 전화받는 가장 흔한 방법 중 하나의 시뮬레이션 비디오가 있어요. 역시 비디오에서의 마우스 포인터를 손가락 중 하나라고 생각해주세요. \n\t그럼, 다른 사람에게 전화해달라고 한 번 해보세요! 성공하시면 좋겠어요! 성공했으면 박스를 체크하고 메인으로 돌아가주세요!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_button_startVideo">시뮬레이션 보기</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_checkBox">해냈어요!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_button_confirm">메인으로 가기</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_toast_complete">두 번째 수업을 성공적으로 마쳤어요!</string>
+    <string name="F02HowToAnswerTheIncomingCallActivity_toast_non_complete">다음에 꼭 해보세요!</string>
+
+    <string name="F03HowToRunAnApp_textView_subtitle01">앱(애플리케이션)이란?</string>
+    <string name="F03HowToRunAnApp_textView_contents01">\t앱은 사용자를 위한 응용프로그램으로 사용자의 목적을 수행하기 위한 프로그램을 칭해요.</string>
+    <string name="F03HowToRunAnApp_textView_subtitle02">어떻게 실행시키나요?</string>
+    <string name="F03HowToRunAnApp_textView_contents02">\t아래 이미지는 앱 아이콘이예요. 시작하려면 클릭보세요! 단, 오래 누르지 마세요.</string>
+    <string name="F03HowToRunAnApp_button_theApp">나예요!</string>
+    <string name="F03HowToRunAnApp_textView_subtitle03">클릭 VS. 오래 누르기</string>
+    <string name="F03HowToRunAnApp_textView_contents03">\t잘 했어요! 앱을 실행시키려 할 때 많은 초보자들이 오래 누르곤 하는데, 방금 하신 것 처럼 짧게 클릭해야 합니다. 그럼 이번엔 오래 눌러서 여기로 앱을 끌어와볼래요?</string>
+    <string name="F03HowToRunAnApp_textView_dropBox">여기에 앱을 놓아주세요!</string>
+    <string name="F03HowToRunAnApp_toast_click_right01">해냈어요!</string>
+    <string name="F03HowToRunAnApp_toast_click_wrong01">아니, 이번엔 오래 눌러야죠!</string>
+    <string name="F03HowToRunAnApp_toast_longClick_right01">계속 끌어내려서 노란 박스위에 놓아주세요!</string>
+    <string name="F03HowToRunAnApp_toast_longClick_wrong01">너무 오래 눌렀어요. 짧게 한 번 누르세요.</string>
+    <string name="F03HowToRunAnApp_toast_longClick_wrong02">놓쳤네요! 다시 한 번 해봐요.</string>
+    <string name="F03HowToRunAnApp_toast_complete">세 번째 수업을 성공적으로 마쳤어요!</string>
+
+    <string name="F04HowToManipulateTheCursor_textView_subtitle01">커서가 뭐에요?</string>
+    <string name="F04HowToManipulateTheCursor_editText_hint"> &lt;-이 깜빡이는 것이 커서에요!</string>
+    <string name="F04HowToManipulateTheCursor_textView_contents01">\t커서를 봤으면 그 곳에 글자를 입력할 수 있어요. 그럼 키보드를 띄우기 위해 커서를 두드리고 \'안드로이드\'라고 입력해주세요. 그리고 \'완료\'버튼을 눌러주세요!</string>
+    <string name="F04HowToManipulateTheCursor_string_answer01">안드로이드</string>
+    <string name="F04HowToManipulateTheCursor_toast_right01">멋져요!</string>
+    <string name="F04HowToManipulateTheCursor_toast_wrong01">\'안드로이드\'를 입력하세요</string>
+    <string name="F04HowToManipulateTheCursor_textView_hint01">힌트: </string>
+    <string name="F04HowToManipulateTheCursor_textView_hint_contents01">이것도 \'완료\'일 수 있습니다.</string>
+    <string name="F04HowToManipulateTheCursor_textView_subtitle02">커서 포인터를 조작해봐요!</string>
+    <string name="F04HowToManipulateTheCursor_textView_contents02">\t완벽해요! 이번엔 \'내안드로이드\'를 써보겠어요? 지우고 다시 쓰지 말고, 커서 포인터를 움직여서 \'내\'만 붙여봐요! 커서 포인터는 다시 한 번 커서를 두드리면 활성화시킬 수 있어요.</string>
+    <string name="F04HowToManipulateTheCursor_textView_hint_contents02">이게 커서 포인터에요.</string>
+    <string name="F04HowToManipulateTheCursor_string_answer02">내안드로이드</string>
+    <string name="F04HowToManipulateTheCursor_toast_right02">훌륭해요!</string>
+    <string name="F04HowToManipulateTheCursor_toast_wrong02">\'내안드로이드\'를 입력하세요</string>
+    <string name="F04HowToManipulateTheCursor_toast_alertDoNotUseDel">지움키는 이번엔 사용하지 마세요!</string>
+    <string name="F04HowToManipulateTheCursor_button_startVideo">튜토리얼 비디오 보기</string>
+    <string name="F04HowToManipulateTheCursor_toast_complete">네 번째 수업을 성공적으로 마쳤어요!</string>
+
+    <string name="F05HowToScrollTheScreen_textView_subtitle01">스크롤이란?</string>
+    <string name="F05HowToScrollTheScreen_textView_contents01">\t여태까지 스크롤링 해본적 있으세요? 아래 노란 박스도 스크롤 할 수 있어요. 박스의 맨 오른 쪽 위의 바가 보이세요? 그건 당신이 스크롤 할 수 있다는 걸 말해요!</string>
+    <string name="F05HowToScrollTheScreen_textView_contents02">\t박스를 끌어 올리면, 스크롤을 내릴 수 있어요. 스크롤을 올리려면, 박스를 끌어내려보세요. 그럼, 노란 박스를 끌어올리고 거기에 쓰여진 문장을 적어서 제출해주세요!</string>
+    <string name="F05HowToScrollTheScreen_answer">당신은 멋진 사람이에요!</string>
+    <string name="F05HowToScrollTheScreen_editText_hint">여길 두드리고 적어서 제출해주세요!</string>
+    <string name="F05HowToScrollTheScreen_toast_wrong">아니에요, 다시 해보세요.</string>
+    <string name="F05HowToScrollTheScreen_toast_complete">마지막 수업을 성공적으로 마쳤어요!</string>
+</resources>
