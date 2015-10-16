@@ -20,8 +20,10 @@ import android.widget.Toast;
 public class F03HowToRunAnAppActivity extends AppCompatActivity {
     private boolean didYouRunTheApp;
     private Button button_lanchApp;
-    private TextView textView_dropHere;
+    private TextView textView_hiddenTextViews;
     private ScrollView scrollView;
+    private Toast toast;
+    private Vibrator vibrator;
 
     /**
      * Initializes every stuff and set onClickListener and onLongClickListener on the app button
@@ -35,12 +37,14 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
 
         didYouRunTheApp = false;
 
-        textView_dropHere = (TextView) findViewById(R.id.textView_drop_here);
-
         scrollView = (ScrollView) findViewById(R.id.scrollView_how_to_run_an_App);
 
         button_lanchApp = (Button) findViewById(R.id.button_app);
         button_lanchApp.setTag(getString(R.string.F03HowToRunAnApp_button_theApp));
+
+        textView_hiddenTextViews = (TextView) findViewById(R.id.textView_drop_here);
+
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         /**
          * Allows you to simulate running an application by just clicking.
@@ -48,30 +52,29 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
         button_lanchApp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Vibrates when you click the button for short time.
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(R00ConstantTimeValues.VIBRATE_SHORT);
 
                 // If you do not succeed to run the app yet, clicking button allows you to run the app.
                 // Shows the next instructions.
                 if (!didYouRunTheApp) {
-                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_click_right01), Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_click_right01), Toast.LENGTH_SHORT);
                     toast.show();
 
-                    TextView theDiff = (TextView) findViewById(R.id.textView_what_the_diff_is);
-                    theDiff.setVisibility(View.VISIBLE);
+                    textView_hiddenTextViews = (TextView) findViewById(R.id.textView_what_the_diff_is);
+                    textView_hiddenTextViews.setVisibility(View.VISIBLE);
 
-                    TextView descOfTheDiff = (TextView) findViewById(R.id.textView_desc_of_what_the_diff);
-                    descOfTheDiff.setVisibility(View.VISIBLE);
+                    textView_hiddenTextViews = (TextView) findViewById(R.id.textView_desc_of_what_the_diff);
+                    textView_hiddenTextViews.setVisibility(View.VISIBLE);
 
-                    TextView dropHere = (TextView) findViewById(R.id.textView_drop_here);
-                    dropHere.setVisibility(View.VISIBLE);
+                    textView_hiddenTextViews = (TextView) findViewById(R.id.textView_drop_here);
+                    textView_hiddenTextViews.setVisibility(View.VISIBLE);
 
                     didYouRunTheApp = true;
 
                     // Scrolls to the end of view.
                     scrollView.scrollTo(0, (int) button_lanchApp.getY());
                 } else {    // If you succeeded to run the app, you are to do long click, so alerts that.
-                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_click_wrong01), Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_click_wrong01), Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }
@@ -82,21 +85,20 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
          */
         button_lanchApp.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public boolean onLongClick(View v) {
+            public boolean onLongClick(View view) {
                 // Vibrates when you click the button for long time.
-                Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 vibrator.vibrate(R00ConstantTimeValues.VIBRATE_LONG);
 
                 // If you do not succeed to run the app yet, you are click, so alerts that.
                 if (!didYouRunTheApp) {
-                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_wrong01), Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_wrong01), Toast.LENGTH_SHORT);
                     toast.show();
                 } else {    // If you succeeded to run the app, doing long click button allows you to move the app.
-                    Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_right01), Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_right01), Toast.LENGTH_SHORT);
                     toast.show();
-                    ClipData dragData = ClipData.newPlainText(v.getTag().toString(), v.getTag().toString());
-                    View.DragShadowBuilder myShadow = new View.DragShadowBuilder(v);
-                    v.startDrag(dragData, myShadow, v, 0);
+                    ClipData dragData = ClipData.newPlainText(view.getTag().toString(), view.getTag().toString());
+                    View.DragShadowBuilder myShadow = new View.DragShadowBuilder(view);
+                    view.startDrag(dragData, myShadow, view, 0);
                 }
                 return true;
             }
@@ -107,17 +109,17 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
          */
         scrollView.setOnDragListener(new View.OnDragListener() {
             @Override
-            public boolean onDrag(View v, DragEvent event) {
+            public boolean onDrag(View view, DragEvent event) {
                 // Defines a variable to store the action type for the incoming event
                 final int action = event.getAction();
 
                 switch (action) {
                     case DragEvent.ACTION_DRAG_LOCATION:
-                        v.scrollBy(0, (int) event.getY()/2);
+                        view.scrollBy(0, (int) event.getY() / 2);
                         break;
 
                     case DragEvent.ACTION_DROP:
-                        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_wrong02), Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_longClick_wrong02), Toast.LENGTH_SHORT);
                         toast.show();
                         break;
                 }
@@ -129,20 +131,20 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
         /**
          * Detects that you drop the app on the drop box and finishes the activity.
          */
-        textView_dropHere.setOnDragListener(new View.OnDragListener() {
+        textView_hiddenTextViews.setOnDragListener(new View.OnDragListener() {
             @Override
-            public boolean onDrag(View v, DragEvent event) {
+            public boolean onDrag(View view, DragEvent event) {
                 // Defines a variable to store the action type for the incoming event
                 final int action = event.getAction();
 
                 // Handles each of the expected events
                 switch (action) {
                     case DragEvent.ACTION_DROP:
-                        button_lanchApp.setX(v.getX() + (v.getWidth() - button_lanchApp.getWidth()) / 2);
-                        button_lanchApp.setY(v.getY() - (button_lanchApp.getHeight() - v.getHeight()) / 2);
+                        button_lanchApp.setX(view.getX() + (view.getWidth() - button_lanchApp.getWidth()) / 2);
+                        button_lanchApp.setY(view.getY() - (button_lanchApp.getHeight() - view.getHeight()) / 2);
 
                         // Lets you know that you complete the mission.
-                        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_complete), Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(getApplicationContext(), getString(R.string.F03HowToRunAnApp_toast_complete), Toast.LENGTH_SHORT);
                         toast.show();
 
                         // Destroys the activity.

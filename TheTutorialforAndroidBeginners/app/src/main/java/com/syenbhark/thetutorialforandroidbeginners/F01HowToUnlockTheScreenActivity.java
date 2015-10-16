@@ -24,6 +24,7 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
     private ComponentName mComponentName;
     private boolean didUnlockTheScreen;
     private boolean isResumedAfterTryingItOut;
+    private Vibrator vibrator;
 
     /**
      * Initializes a device manager, a component to lock screen and a flag boolean variable.
@@ -40,6 +41,8 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
         mComponentName = new ComponentName(this, F01MyAdminReceiver.class);
         didUnlockTheScreen = false;
         isResumedAfterTryingItOut = false;
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
     }
 
     /**
@@ -47,9 +50,8 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
      *
      * @param view of an object(Button).
      */
-    public void setOnClick(View view) {
+    public void watchTheSimulationOfUnlockingOnClick(View view) {
         // Vibrates when you click the button.
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 
         // starts the activity that plays the simulation video.
@@ -61,12 +63,11 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
      *
      * @param view of an object(Button).
      */
-    public void setOnClickTryUnlockOut(View view) {
+    public void tryUnlockingOutOnClick(View view) {
         // Vibrates when you click the button.
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 
-        //
+        // Tries to get the device adim.
         Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
         intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, mComponentName);
         intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, getString(R.string.description));
@@ -82,7 +83,6 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
         } else {    // Otherwise, alert that you are not the administer.
             Toast.makeText(getApplicationContext(), getString(R.string.F01HowToUnlockTheScreenActivity_toast_alertAdmin), Toast.LENGTH_SHORT).show();
         }
-
     }
 
     /**
@@ -98,7 +98,7 @@ public class F01HowToUnlockTheScreenActivity extends AppCompatActivity {
         }
 
         // After clicking the trying it out button, this activity will be resumed because you did unlock the screen.
-        if(didUnlockTheScreen){
+        if (didUnlockTheScreen) {
             isResumedAfterTryingItOut = true;
         }
     }

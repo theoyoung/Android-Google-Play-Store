@@ -25,9 +25,14 @@ import android.widget.Toast;
 
 public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
 
-    boolean isPassedDoneKey;
-    EditText editText;
-
+    private boolean isPassedDoneKey;
+    private TextView textView;
+    private EditText editText;
+    private ImageView imageView;
+    private Toast toast;
+    private Button button;
+    private Vibrator vibrator;
+    
     /**
      * Initializes every stuff and makes the EditText
      * @param savedInstanceState
@@ -38,6 +43,7 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_f04_how_to_manipulate_the_cursor);
 
         isPassedDoneKey = false;
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         /**
          * Confirms your answer when the done key pressed.
@@ -49,7 +55,6 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                 // When you press the done key,
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     // Vibrates when you press the done key.
-                    Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 
                     // Before typing in 'Android'
@@ -60,15 +65,15 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
                             inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
-                            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_right01), Toast.LENGTH_SHORT);
+                            toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_right01), Toast.LENGTH_SHORT);
                             toast.show();
 
                             // Shows the next step to manipulating cusor pointer issue.
-                            TextView textView = (TextView) findViewById(R.id.textView_HowToManipulateTheCursorSubtitle);
+                            textView = (TextView) findViewById(R.id.textView_HowToManipulateTheCursorSubtitle);
                             textView.setText(getString(R.string.F04HowToManipulateTheCursor_textView_subtitle02));
 
-                            ImageView imageView = (ImageView) findViewById(R.id.imageView_cursor_hint);
-                            imageView.setBackgroundResource(R.mipmap.cursor_pointer);
+                            imageView = (ImageView) findViewById(R.id.imageView_cursor_hint);
+                            imageView.setBackgroundResource(R.drawable.cursor_pointer);
 
                             textView = (TextView) findViewById(R.id.textView_cursor_description);
                             textView.setText(getString(R.string.F04HowToManipulateTheCursor_textView_contents02));
@@ -76,13 +81,13 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             textView = (TextView) findViewById(R.id.textView_cursor_hint);
                             textView.setText(getString(R.string.F04HowToManipulateTheCursor_textView_hint_contents02));
 
-                            Button button = (Button) findViewById(R.id.button_to_see_cursor_video);
+                            button = (Button) findViewById(R.id.button_to_see_cursor_video);
                             button.setVisibility(View.VISIBLE);
 
                             // Flags you pressed the done key.
                             isPassedDoneKey = true;
                         } else {    // When you type in a wrong word, alerts that.
-                            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_wrong01), Toast.LENGTH_SHORT);
+                            toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_wrong01), Toast.LENGTH_SHORT);
                             toast.show();
                         }
                     } else {  // After typing in 'Android' correctly, you are to prefix 'My'
@@ -92,7 +97,7 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
                             inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
 
-                            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_right02), Toast.LENGTH_SHORT);
+                            toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_right02), Toast.LENGTH_SHORT);
                             toast.show();
 
                             toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_complete), Toast.LENGTH_SHORT);
@@ -113,7 +118,7 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             }, R00ConstantTimeValues.TOAST_SHORT_TIME);
 
                         } else {    // When you type in wrong text, alerts that.
-                            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_wrong02), Toast.LENGTH_SHORT);
+                            toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_wrong02), Toast.LENGTH_SHORT);
                             toast.show();
                         }
                     }
@@ -133,7 +138,7 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                 if (isPassedDoneKey) {
                     if (event.getAction() == KeyEvent.ACTION_DOWN) {
                         if (keyCode == KeyEvent.KEYCODE_DEL) {
-                            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_alertDoNotUseDel), Toast.LENGTH_SHORT);
+                            toast = Toast.makeText(getApplicationContext(), getString(R.string.F04HowToManipulateTheCursor_toast_alertDoNotUseDel), Toast.LENGTH_SHORT);
                             toast.show();
 
                             return true;
@@ -149,10 +154,9 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
      * Shows the answer video when you click the button.
      * @param view of a clicked object(button).
      */
-    public void setOnClick(View view) {
+    public void setOnClick_watchTheSimulationOfManipulating(View view) {
         // Vibrates when you click the button.
-        Vibrator vb = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vb.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
+        vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 
         // Shows the video.
         startActivity(new Intent(F04HowToManipulateTheCursorActivity.this, F04CursorPointerVideoActivity.class));

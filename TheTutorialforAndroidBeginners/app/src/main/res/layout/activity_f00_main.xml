@@ -9,27 +9,27 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_01"
+        android:id="@+id/butto_goTo_HowToUnlockTheScreenActivity"
         style="@style/CustomMainButton"
         android:text="@string/button01" />
 
     <Button
-        android:id="@+id/button_02"
+        android:id="@+id/button_goTo_HowToAnswerTheIncomingCall"
         style="@style/CustomMainButton"
         android:text="@string/button02" />
 
     <Button
-        android:id="@+id/button_03"
+        android:id="@+id/button_goTo_HowToRunAnAppActivity"
         style="@style/CustomMainButton"
         android:text="@string/button03" />
 
     <Button
-        android:id="@+id/button_04"
+        android:id="@+id/button_goTo_HowToManipulateTheCursorActivity"
         style="@style/CustomMainButton"
         android:text="@string/button04" />
 
     <Button
-        android:id="@+id/button_05"
+        android:id="@+id/button_goTo_HowToScrollTheScreenActivity"
         style="@style/CustomMainButton"
         android:text="@string/button05" />
 

@@ -37,11 +37,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="5dp"
-                android:onClick="setOnClick"
+                android:onClick="watchTheSimulationOfUnlockingOnClick"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/F01HowToUnlockTheScreenActivity_button_startVideo"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <Button
                 android:id="@+id/button_to_try_it_out"
@@ -50,11 +50,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="5dp"
-                android:onClick="setOnClickTryUnlockOut"
+                android:onClick="tryUnlockingOutOnClick"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:text="@string/F01HowToUnlockTheScreenActivity_button_trySimulation"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
         </RelativeLayout>
     </LinearLayout>

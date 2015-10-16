@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:background="@mipmap/done" />
+                android:background="@drawable/done" />
 
             <TextView
                 android:id="@+id/textView_cursor_hint"
@@ -75,11 +75,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0"
-            android:onClick="setOnClick"
+            android:onClick="setOnClick_watchTheSimulationOfManipulating"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/F04HowToManipulateTheCursor_button_startVideo"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:visibility="invisible" />
     </LinearLayout>
 </ScrollView>

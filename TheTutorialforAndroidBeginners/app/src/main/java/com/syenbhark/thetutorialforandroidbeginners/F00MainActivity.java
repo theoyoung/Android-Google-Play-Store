@@ -13,15 +13,9 @@ import android.view.View;
  */
 
 public class F00MainActivity extends AppCompatActivity {
-    // Buttons' Ids
-    private int Button01_Id;
-    private int Button02_Id;
-    private int Button03_Id;
-    private int Button04_Id;
-    private int Button05_Id;
 
     /**
-     * Initializes Buttons' Ids
+     * Initializes the Activity
      * @param savedInstanceState
      */
 
@@ -29,19 +23,13 @@ public class F00MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_f00_main);
-
-        Button01_Id = findViewById(R.id.button_01).getId();
-        Button02_Id = findViewById(R.id.button_02).getId();
-        Button03_Id = findViewById(R.id.button_03).getId();
-        Button04_Id = findViewById(R.id.button_04).getId();
-        Button05_Id = findViewById(R.id.button_05).getId();
     }
 
     /**
      * Goes to the activity corresponding with clicked a button.
      * @param view of a clicked object(button).
      */
-    public void setOnClick(View view) {
+    public void switchActivityOnClick(View view) {
         // gets Id of clicked view.
         int viewId = view.getId();
 
@@ -53,19 +41,19 @@ public class F00MainActivity extends AppCompatActivity {
         Class goToActivity = null;
 
         // Puts the target activity into goToActivity.
-        if (viewId == Button01_Id) {
+        if (viewId == R.id.butto_goTo_HowToUnlockTheScreenActivity) {
             // 01. How to unlock the screen?
             goToActivity = F01HowToUnlockTheScreenActivity.class;
-        } else if (viewId == Button02_Id) {
+        } else if (viewId == R.id.button_goTo_HowToAnswerTheIncomingCall) {
             // 02. How to take the incoming call?
             goToActivity = F02HowToAnswerTheIncomingCallActivity.class;
-        } else if (viewId == Button03_Id) {
+        } else if (viewId == R.id.button_goTo_HowToRunAnAppActivity) {
             // 03. How to run an application?
             goToActivity = F03HowToRunAnAppActivity.class;
-        } else if (viewId == Button04_Id) {
+        } else if (viewId == R.id.button_goTo_HowToManipulateTheCursorActivity) {
             // 04. How to manipulate the cursor(pointer)?
             goToActivity = F04HowToManipulateTheCursorActivity.class;
-        } else if (viewId == Button05_Id) {
+        } else if (viewId == R.id.button_goTo_HowToScrollTheScreenActivity) {
             // 05. Turn of WiFi or (Mobile) Data?
             goToActivity = F05HowToScrollTheScreenActivity.class;
         }

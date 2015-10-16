@@ -18,7 +18,9 @@ import android.widget.Toast;
  */
 
 public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
-    EditText editText_scroll;
+    private EditText editText_scroll;
+    private Vibrator vibrator;
+    private Toast toast;
 
     /**
      * Initialize stuff and get the input text from the EditText and checks it.
@@ -28,6 +30,8 @@ public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_f05_how_to_scroll_the_screen);
+
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         /**
          * Confirms your answer when the done key pressed.
@@ -39,7 +43,6 @@ public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
                 //
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     // Vibrates when you press the done key.
-                    Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 
                     //Hides the soft keyboard
@@ -48,12 +51,12 @@ public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
 
                     // When you wrote the right text, finishes the activity.
                     if (editText_scroll.getText().toString().contentEquals(getString(R.string.F05HowToScrollTheScreen_answer))) {
-                        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F05HowToScrollTheScreen_toast_complete), Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(getApplicationContext(), getString(R.string.F05HowToScrollTheScreen_toast_complete), Toast.LENGTH_SHORT);
                         toast.show();
 
                         finish();
                     } else {    // When you type in a wrong word, alerts that.
-                        Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.F05HowToScrollTheScreen_toast_wrong), Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(getApplicationContext(), getString(R.string.F05HowToScrollTheScreen_toast_wrong), Toast.LENGTH_SHORT);
                         toast.show();
                     }
                     return true;

@@ -49,7 +49,6 @@
             android:clickable="true"
             android:drawableTop="@mipmap/ic_launcher"
             android:longClickable="true"
-            android:onClick="setOnClick"
             android:text="@string/F03HowToRunAnApp_button_theApp"
             android:textAllCaps="false"
             android:textColor="#757575" />
