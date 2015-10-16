@@ -9,28 +9,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/butto_goTo_HowToUnlockTheScreenActivity"
+        android:id="@+id/button_goTo_HowToUnlockTheScreenActivity"
         style="@style/CustomMainButton"
-        android:text="@string/button01" />
+        android:text="@string/goTo_HowToUnlockTheScreenActivity" />
 
     <Button
         android:id="@+id/button_goTo_HowToAnswerTheIncomingCall"
         style="@style/CustomMainButton"
-        android:text="@string/button02" />
+        android:text="@string/goTo_HowToAnswerTheIncomingCallActivity" />
 
     <Button
         android:id="@+id/button_goTo_HowToRunAnAppActivity"
         style="@style/CustomMainButton"
-        android:text="@string/button03" />
+        android:text="@string/goTo_HowToRunAnApp" />
 
     <Button
         android:id="@+id/button_goTo_HowToManipulateTheCursorActivity"
         style="@style/CustomMainButton"
-        android:text="@string/button04" />
+        android:text="@string/goTo_HowToManipulateTheCursor" />
 
     <Button
         android:id="@+id/button_goTo_HowToScrollTheScreenActivity"
         style="@style/CustomMainButton"
-        android:text="@string/button05" />
+        android:text="@string/goTo_HowToScrollTheScreenActivity" />
 
 </LinearLayout>

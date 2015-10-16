@@ -9,12 +9,14 @@ import android.widget.VideoView;
 
 /**
  * Shows the simulation video to get the answer, typing in 'Android'.
+ *
  * @author Syen
  */
 public class F04CursorPointerVideoActivity extends AppCompatActivity {
 
     /**
      * Plays the simulation video with removing its action bar and title bar.
+     *
      * @param savedInstanceState
      */
     @Override

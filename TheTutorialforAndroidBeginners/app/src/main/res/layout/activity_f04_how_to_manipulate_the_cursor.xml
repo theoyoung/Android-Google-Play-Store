@@ -29,9 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:capitalize="words"
             android:hint="@string/F04HowToManipulateTheCursor_editText_hint"
             android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
             android:singleLine="true" />
 
         <TextView
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0"
-            android:onClick="setOnClick_watchTheSimulationOfManipulating"
+            android:onClick="watchTheSimulationOfManipulatingOnClick"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:text="@string/F04HowToManipulateTheCursor_button_startVideo"

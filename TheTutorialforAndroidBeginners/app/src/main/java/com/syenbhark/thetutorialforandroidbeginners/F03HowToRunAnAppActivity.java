@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 /**
  * Teaches how to run an application by explaining that and allowing you to simulate that.
+ *
  * @author Syen
  */
 public class F03HowToRunAnAppActivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class F03HowToRunAnAppActivity extends AppCompatActivity {
     /**
      * Initializes every stuff and set onClickListener and onLongClickListener on the app button
      * and onDragListener on the ScrollView and the dropBox TextView.
+     *
      * @param savedInstanceState
      */
     @Override

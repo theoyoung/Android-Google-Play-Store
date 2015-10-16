@@ -41,11 +41,11 @@
             android:textSize="15sp" />
 
         <CheckBox
-            android:layout_gravity="center_horizontal"
             android:id="@+id/checkBox_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/F02HowToAnswerTheIncomingCallActivity_checkBox"/>
+            android:layout_gravity="center_horizontal"
+            android:text="@string/F02HowToAnswerTheIncomingCallActivity_checkBox" />
 
         <Button
             android:id="@+id/button_to_return"

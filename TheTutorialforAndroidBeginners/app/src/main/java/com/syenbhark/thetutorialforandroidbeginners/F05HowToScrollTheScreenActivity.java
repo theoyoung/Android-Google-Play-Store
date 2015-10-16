@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 /**
  * Teaches how to scroll the screen by explaining that and allows you try that out.
+ *
  * @author Syen
  */
 
@@ -24,6 +25,7 @@ public class F05HowToScrollTheScreenActivity extends AppCompatActivity {
 
     /**
      * Initialize stuff and get the input text from the EditText and checks it.
+     *
      * @param savedInstanceState
      */
     @Override

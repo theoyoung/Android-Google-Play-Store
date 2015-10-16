@@ -20,6 +20,7 @@ import android.widget.Toast;
 /**
  * Teaches how to manipulate the cursor pointer by explaining that and showing the video
  * and allowing you to simulate that.
+ *
  * @author Syen
  */
 
@@ -32,9 +33,10 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
     private Toast toast;
     private Button button;
     private Vibrator vibrator;
-    
+
     /**
-     * Initializes every stuff and makes the EditText
+     * Initializes every stuff and set EditorActionListener on the EditText
+     *
      * @param savedInstanceState
      */
     @Override
@@ -104,8 +106,8 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
                             toast.show();
 
                             new Handler().postDelayed(new Runnable() {
-			/*
-			 * Showing splash screen with a timer. This will be useful when you
+            /*
+             * Showing splash screen with a timer. This will be useful when you
 			 * want to show case your app logo / company
 			 */
 
@@ -152,9 +154,10 @@ public class F04HowToManipulateTheCursorActivity extends AppCompatActivity {
 
     /**
      * Shows the answer video when you click the button.
+     *
      * @param view of a clicked object(button).
      */
-    public void setOnClick_watchTheSimulationOfManipulating(View view) {
+    public void watchTheSimulationOfManipulatingOnClick(View view) {
         // Vibrates when you click the button.
         vibrator.vibrate(R00ConstantTimeValues.VIBRATE_NORMAL);
 

@@ -2,11 +2,11 @@
 <resources>
     <string name="app_name">The Tutorial for Android Beginners</string>
     <string name="dear">For my grandma</string>
-    <string name="button01">1. How to unlock the screen?</string>
-    <string name="button02">2. How to answer the incoming call?</string>
-    <string name="button03">3. How to run an application?</string>
-    <string name="button04">4. How to manipulate the cursor?</string>
-    <string name="button05">5. How to scroll the screen?</string>
+    <string name="goTo_HowToUnlockTheScreenActivity">1. How to unlock the screen?</string>
+    <string name="goTo_HowToAnswerTheIncomingCallActivity">2. How to answer the incoming call?</string>
+    <string name="goTo_HowToRunAnApp">3. How to run an application?</string>
+    <string name="goTo_HowToManipulateTheCursor">4. How to manipulate the cursor?</string>
+    <string name="goTo_HowToScrollTheScreenActivity">5. How to scroll the screen?</string>
 
     <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">Unlock the basic screen</string>
     <string name="F01HowToUnlockTheScreenActivity_textView_contents">\tIf your screen is turned off, but the device\'s power is not off, press the hold key to turn it on. After that, press and drag the lock to the unlock. If there is nothing, just drag the screen to anywhere. \n\tHere is the simulation video that is one of the ways, when you cannot understand that. In the video, assume that the mouse pointer is one of your fingers. \n\tAnyway, how about trying it out? It works after activating device administrator.</string>

@@ -9,6 +9,7 @@ import android.view.View;
 
 /**
  * Enumerates functions which are top 5 difficulties that the novices used to be confused.
+ *
  * @author Syen
  */
 
@@ -16,6 +17,7 @@ public class F00MainActivity extends AppCompatActivity {
 
     /**
      * Initializes the Activity
+     *
      * @param savedInstanceState
      */
 
@@ -27,6 +29,7 @@ public class F00MainActivity extends AppCompatActivity {
 
     /**
      * Goes to the activity corresponding with clicked a button.
+     *
      * @param view of a clicked object(button).
      */
     public void switchActivityOnClick(View view) {
@@ -41,7 +44,7 @@ public class F00MainActivity extends AppCompatActivity {
         Class goToActivity = null;
 
         // Puts the target activity into goToActivity.
-        if (viewId == R.id.butto_goTo_HowToUnlockTheScreenActivity) {
+        if (viewId == R.id.button_goTo_HowToUnlockTheScreenActivity) {
             // 01. How to unlock the screen?
             goToActivity = F01HowToUnlockTheScreenActivity.class;
         } else if (viewId == R.id.button_goTo_HowToAnswerTheIncomingCall) {

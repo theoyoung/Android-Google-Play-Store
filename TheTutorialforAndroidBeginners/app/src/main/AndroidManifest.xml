@@ -38,23 +38,23 @@
 
         <activity
             android:name=".F01HowToUnlockTheScreenActivity"
-            android:label="@string/button01"></activity>
+            android:label="@string/goTo_HowToUnlockTheScreenActivity"></activity>
         <activity
             android:name=".F02HowToAnswerTheIncomingCallActivity"
-            android:label="@string/button02" />
+            android:label="@string/goTo_HowToAnswerTheIncomingCallActivity" />
         <activity
             android:name=".F03HowToRunAnAppActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/button03" />
+            android:label="@string/goTo_HowToRunAnApp" />
         <activity
             android:name=".F04HowToManipulateTheCursorActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/button04"
+            android:label="@string/goTo_HowToManipulateTheCursor"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".F05HowToScrollTheScreenActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/button05"
+            android:label="@string/goTo_HowToScrollTheScreenActivity"
             android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".F04CursorPointerVideoActivity"

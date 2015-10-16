@@ -1,19 +1,21 @@
 package com.syenbhark.thetutorialforandroidbeginners;
 
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.VideoView;
 
 /**
  * Shows the simulation video which is one of common ways to answer the incoming call.
+ *
  * @author Syen
  */
 public class F02AnswerTheCallVideoActivity extends AppCompatActivity {
     /**
      * Plays the simulation video with removing its action bar and title bar.
+     *
      * @param savedInstanceState
      */
     @Override

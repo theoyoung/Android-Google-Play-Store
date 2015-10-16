@@ -8,12 +8,14 @@ import android.os.Handler;
 /**
  * Builds a splash screen.
  * Cite: http://www.androidhive.info/2013/07/how-to-implement-android-splash-screen-2/
+ *
  * @author Syen
  */
 public class F00SplashScreenActivity extends Activity {
 
     /**
      * Shows the splash screen for a moment.
+     *
      * @param savedInstanceState
      */
     @Override

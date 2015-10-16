@@ -2,11 +2,11 @@
 <resources>
     <string name="app_name">안드로이드\n초보자 튜토리얼</string>
     <string name="dear">사랑하는 할머니께</string>
-    <string name="button01">1. 홀드화면은 어떻게 열어요?</string>
-    <string name="button02">2. 전화는 어떻게 받아요?</string>
-    <string name="button03">3. 앱은 어떻게 실행시키나요?</string>
-    <string name="button04">4. 커서는 어떻게 조작하나요?</string>
-    <string name="button05">5. 화면은 어떻게 스크롤해요?</string>
+    <string name="goTo_HowToUnlockTheScreenActivity">1. 홀드화면은 어떻게 열어요?</string>
+    <string name="goTo_HowToAnswerTheIncomingCallActivity">2. 전화는 어떻게 받아요?</string>
+    <string name="goTo_HowToRunAnApp">3. 앱은 어떻게 실행시키나요?</string>
+    <string name="goTo_HowToManipulateTheCursor">4. 커서는 어떻게 조작하나요?</string>
+    <string name="goTo_HowToScrollTheScreenActivity">5. 화면은 어떻게 스크롤해요?</string>
 
     <string name="F01HowToUnlockTheScreenActivity_textView_subtitle">잠긴 화면 열기</string>
     <string name="F01HowToUnlockTheScreenActivity_textView_contents">\t기계는 끄지 않았지만 화면이 꺼져있을 때가 화면이 잠긴거에요. 키려면 홀드키를 누르세요. 그 후, 자물쇠를 열린 자물쇠까지 끌어다 놓으세요. 아무 것도 없다면, 그냥 화면을 아무데나 끌어보세요! \n\t이해가 안 된다면 대표적으로 여는 방법 중 하나인 이 시뮬레이션 비디오를 보세요. 비디오에 있는 마우스 포인터를 당신의 손가락 중 하나로 생각하세요! \n\t그럼, 한 번 직접 해보는 건 어때요? 장치 관리자를 활성화 시킨 후에 하실 수 있어요.</string>

@@ -55,8 +55,9 @@
             android:id="@+id/editText_scrolling"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionDone"
             android:hint="@string/F05HowToScrollTheScreen_editText_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
             android:singleLine="true" />
     </LinearLayout>
 </ScrollView>
